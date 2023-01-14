@@ -46,6 +46,9 @@
 		2EDCAFF42970047400AE9FB6 /* libswscale.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDCAFE22970047400AE9FB6 /* libswscale.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2EDCAFF52970048600AE9FB6 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDCAFDC2970047300AE9FB6 /* libavformat.dylib */; };
 		2EDCAFF7297004B700AE9FB6 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 2EDCAFF6297004B700AE9FB6 /* include */; };
+		2EDCAFFB2970285E00AE9FB6 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDCAFFA2970285E00AE9FB6 /* SDL2.framework */; };
+		2EDCAFFC2970285E00AE9FB6 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDCAFFA2970285E00AE9FB6 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EDCB01C2971428D00AE9FB6 /* PCMPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EDCB01B2971428D00AE9FB6 /* PCMPlayer.mm */; };
 		2EF2C1A8296BB4CE0012CCBD /* EncodeUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C1A7296BB4CD0012CCBD /* EncodeUtil.mm */; };
 		2EF2C1AB296BBB310012CCBD /* ResampleUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C1AA296BBB310012CCBD /* ResampleUtil.mm */; };
 		2EF7EF39296D4C5200F7DC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7EF37296D4C5200F7DC19 /* Main.storyboard */; };
@@ -62,6 +65,7 @@
 				2EDCAFEE2970047400AE9FB6 /* libpostproc.dylib in Embed Frameworks */,
 				2E0104EE296408D600608DEB /* AVFoundation.framework in Embed Frameworks */,
 				2EDCAFEA2970047400AE9FB6 /* libavcodec.dylib in Embed Frameworks */,
+				2EDCAFFC2970285E00AE9FB6 /* SDL2.framework in Embed Frameworks */,
 				2EDCAFF22970047400AE9FB6 /* libswresample.dylib in Embed Frameworks */,
 				2EDCAFF02970047400AE9FB6 /* libavutil.dylib in Embed Frameworks */,
 				2EDCAFE62970047400AE9FB6 /* libavfilter.dylib in Embed Frameworks */,
@@ -92,6 +96,7 @@
 		2E0104E9296407A100608DEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2E0104EB296408CA00608DEB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2E0104F5296417DD00608DEB /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		2E24A6B529716C4C00074AC6 /* ffmpegAudio2Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ffmpegAudio2Release.entitlements; sourceTree = "<group>"; };
 		2E6E4C0B295033D2009F3486 /* ffmpegAudio2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffmpegAudio2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6E4C0E295033D2009F3486 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E6E4C0F295033D2009F3486 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +115,9 @@
 		2EDCAFE12970047400AE9FB6 /* libswresample.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.dylib; path = FFmpeg/lib/libswresample.dylib; sourceTree = "<group>"; };
 		2EDCAFE22970047400AE9FB6 /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = FFmpeg/lib/libswscale.dylib; sourceTree = "<group>"; };
 		2EDCAFF6297004B700AE9FB6 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = FFmpeg/include; sourceTree = "<group>"; };
+		2EDCAFFA2970285E00AE9FB6 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = FFmpeg/lib/SDL2.framework; sourceTree = "<group>"; };
+		2EDCB01A2971428D00AE9FB6 /* PCMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMPlayer.h; sourceTree = "<group>"; };
+		2EDCB01B2971428D00AE9FB6 /* PCMPlayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PCMPlayer.mm; sourceTree = "<group>"; };
 		2EF2C1A6296BB4CD0012CCBD /* EncodeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodeUtil.h; sourceTree = "<group>"; };
 		2EF2C1A7296BB4CD0012CCBD /* EncodeUtil.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EncodeUtil.mm; sourceTree = "<group>"; };
 		2EF2C1A9296BBB310012CCBD /* ResampleUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResampleUtil.h; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				2EDCAFE52970047400AE9FB6 /* libavfilter.dylib in Frameworks */,
 				2E0104ED296408D600608DEB /* AVFoundation.framework in Frameworks */,
 				2E0104F1296408DC00608DEB /* Security.framework in Frameworks */,
+				2EDCAFFB2970285E00AE9FB6 /* SDL2.framework in Frameworks */,
 				2E0104DD296405D300608DEB /* CoreMedia.framework in Frameworks */,
 				2E0104D9296405B700608DEB /* AudioToolbox.framework in Frameworks */,
 				2EDCAFE72970047400AE9FB6 /* libavformat.dylib in Frameworks */,
@@ -148,6 +157,7 @@
 		2E6E4C02295033D2009F3486 = {
 			isa = PBXGroup;
 			children = (
+				2E24A6B529716C4C00074AC6 /* ffmpegAudio2Release.entitlements */,
 				2E6E4C0D295033D2009F3486 /* ffmpegAudio */,
 				2E6E4C0C295033D2009F3486 /* Products */,
 				2EDCAFF6297004B700AE9FB6 /* include */,
@@ -179,6 +189,8 @@
 				2EF2C1AA296BBB310012CCBD /* ResampleUtil.mm */,
 				2E0104B32962CE2600608DEB /* DecodeUtil.h */,
 				2E0104B42962CE2600608DEB /* DecodeUtil.mm */,
+				2EDCB01A2971428D00AE9FB6 /* PCMPlayer.h */,
+				2EDCB01B2971428D00AE9FB6 /* PCMPlayer.mm */,
 				2E6E4C1B295033D5009F3486 /* ffmpegAudio2.entitlements */,
 			);
 			path = ffmpegAudio;
@@ -187,6 +199,7 @@
 		2E6E4C212950347F009F3486 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EDCAFFA2970285E00AE9FB6 /* SDL2.framework */,
 				2EDCAFDD2970047300AE9FB6 /* libavcodec.dylib */,
 				2EDCAFDE2970047300AE9FB6 /* libavdevice.dylib */,
 				2EDCAFDB2970047300AE9FB6 /* libavfilter.dylib */,
@@ -285,6 +298,7 @@
 				2E0104B52962CE2600608DEB /* DecodeUtil.mm in Sources */,
 				2E6E4C1A295033D5009F3486 /* main.mm in Sources */,
 				2EF2C1A8296BB4CE0012CCBD /* EncodeUtil.mm in Sources */,
+				2EDCB01C2971428D00AE9FB6 /* PCMPlayer.mm in Sources */,
 				2E6E4C10295033D2009F3486 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg/lib";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FFmpeg/include\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -455,12 +469,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = ffmpegAudio2/ffmpegAudio2.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ffmpegAudio2Release.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg/lib";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/FFmpeg/include\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

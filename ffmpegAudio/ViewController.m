@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "DecodeUtil.h"
 #import "EncodeUtil.h"
+#import "PCMPlayer.h"
 
 const static NSString *kdeSrcPath = @"deSrcPath";
 const static NSString *kdeDestPath = @"deDestPath";
@@ -70,6 +71,12 @@ const static NSString *kenDestPath = @"enDestPath";
     clearButtonDe.layer.backgroundColor = [NSColor colorWithRed:245 green:31 blue:45 alpha:0.8].CGColor;
     [clearButtonDe setAction:@selector(clearPathDecoder:)];
     
+    NSButton *playButton = [[NSButton alloc] initWithFrame:NSMakeRect(650, 180, 80, 30)];
+    playButton.title = @"Play pcm";
+    playButton.bordered = NO;
+    playButton.wantsLayer = YES;
+    playButton.layer.backgroundColor = [NSColor colorWithRed:100 green:31 blue:100 alpha:0.8].CGColor;
+    [playButton setAction:@selector(playPCM:)];
     
     NSString *enSrcTitle = [[NSUserDefaults standardUserDefaults] objectForKey:(NSString *)kenSrcPath];
     self.enSrcField = [[CommonTextField alloc] initWithFrame:NSMakeRect(30, 80, 500, 30) title:enSrcTitle];
@@ -95,6 +102,7 @@ const static NSString *kenDestPath = @"enDestPath";
     [self.view addSubview:self.deDestField];
     [self.view addSubview:decoderButton];
     [self.view addSubview:clearButtonDe];
+    [self.view addSubview:playButton];
     
     [self.view addSubview:self.enSrcField];
     [self.view addSubview:self.enDestField];
@@ -229,6 +237,13 @@ const static NSString *kenDestPath = @"enDestPath";
     if (enDestPath.length) {
         [[NSUserDefaults standardUserDefaults] setObject:enDestPath forKey:(NSString *)kenDestPath];
     }
+}
+
+- (void)playPCM:(id)sender {
+    PCMPlayer *player =  [[PCMPlayer alloc] init];
+    NSError *error = nil;
+    NSString *path = self.deDestField.stringValue;
+    [player playPCM:path error:&error];
 }
 
 @end
